@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: oldlace;
+}
+
+.btn {
+	display: block;
+	margin: 450px auto;
+	width: 200px;
+	padding: 15px;
+	border: none;
+	color: slateblue;
+	background-color: lightcyan;
+	font-size: 18px;
+	font-family: arial;
+	outline: none;
+	cursor: pointer;
+	transition: 0.15s;
+	z-index: 10;
+}
+
+.btn:hover {
+	transform: scale(1.02);
+}
+
+.btn:active {
+	transform: scale(1);
+}
+
+/* SQUARE */
+
+.square {
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+
+.square:nth-child(1) {
+	background-color: lightgreen;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.square:nth-child(2) {
+	background-color: lightskyblue;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.square:nth-child(3) {
+	background-color: lightslategrey;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.square:nth-child(4) {
+	background-color: lightsalmon;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+/* SQUARE */
+
+/* MOVE */
+.move {
+	transition: 1s;
+}
+
+.move:nth-child(1) {
+	right: 0;
+	top: 0;
+}
+
+.move:nth-child(2) {
+	right: 0;
+	bottom: 0;
+}
+
+.move:nth-child(3) {
+	left: 0;
+	bottom: 0;
+}
+
+.move:nth-child(4) {
+	left: 0;
+	top: 0;
+}
+
+
+/* MOVE */
