@@ -38,6 +38,7 @@ body {
 	display: block;
 	width: 200px;
 	height: 200px;
+	transition: 1s;
 }
 
 .square:nth-child(1) {
@@ -68,32 +69,24 @@ body {
 	bottom: 0;
 }
 
+.container.move .square:nth-child(1) {
+	position: absolute;
+	left: calc(100% - 200px);
+}
+
+.container.move .square:nth-child(2) {
+	position: absolute;
+	top: calc(100% - 200px);
+}
+
+.container.move .square:nth-child(3) {
+	position: absolute;
+	right: calc(100% - 200px);
+}
+
+.container.move .square:nth-child(4) {
+	position: absolute;
+	bottom: calc(100% - 200px);
+}
+
 /* SQUARE */
-
-/* MOVE */
-.move {
-	transition: 1s;
-}
-
-.move:nth-child(1) {
-	right: 0;
-	top: 0;
-}
-
-.move:nth-child(2) {
-	right: 0;
-	bottom: 0;
-}
-
-.move:nth-child(3) {
-	left: 0;
-	bottom: 0;
-}
-
-.move:nth-child(4) {
-	left: 0;
-	top: 0;
-}
-
-
-/* MOVE */

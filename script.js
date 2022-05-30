@@ -1,11 +1,11 @@
 const show = document.querySelector('.btn');
-const square = document.querySelectorAll('.square');
+const square = document.querySelectorAll('.container');
 
 show.onclick = function () {
-	console.log('res');
 	square.forEach(element =>
-		element.classList.add('move'))
+		element.classList.toggle('move'))
 }
+
 
 
 
